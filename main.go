@@ -11,6 +11,9 @@ import (
 func main() {
 	r := mux.NewRouter()
 
+	// STATIC FILES
+	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+
 	// ROUTES
 	r.HandleFunc("/", homeHandler).Methods("GET")
 	r.HandleFunc("/about", aboutHandler).Methods("GET")

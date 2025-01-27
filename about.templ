@@ -1,16 +1,9 @@
 package main
 
 templ about() {
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>About Page</title>
-	</head>
-	<body>
-		@nav()
-	    <h1>This the About Page!</h1>
-	</body>
-	</html>
+    @base("About Page", aboutContent())
+}
+
+templ aboutContent() {
+    <h1>This is the About Mage!</h1>
 }
