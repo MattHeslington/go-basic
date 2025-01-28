@@ -4,7 +4,7 @@ tasks:
     dev:
         cmds:
             - task css & # Run CSS watcher in the background
-            - air # Start Air for hot reloading
+            - AIR_CONF=./air.toml air
         silent: false
 
     css:
