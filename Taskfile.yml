@@ -1,0 +1,13 @@
+version: "3"
+
+tasks:
+    dev:
+        cmds:
+            - task css & # Run CSS watcher in the background
+            - air # Start Air for hot reloading
+        silent: false
+
+    css:
+        cmds:
+            - tailwindcss -i static/css/input.css -o static/css/styles.css --watch
+        silent: false

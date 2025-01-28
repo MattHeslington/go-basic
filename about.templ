@@ -6,4 +6,10 @@ templ about() {
 
 templ aboutContent() {
     <h1>This is the About Mage!</h1>
+    <div class="flex flex-col">
+        <input  data-bind="input" type="text" class="h-10 border border-gray-700 rounded w-[300px]"/>
+        <div data-text="$input">
+            I will get replaced with the contents of the input signal
+        </div>
+    </div>
 }

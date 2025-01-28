@@ -1,0 +1,6 @@
+[build]
+cmd = "templ generate && go build -o ./tmp/main ."
+bin = "./tmp/main"
+include_ext = ["go", "templ", "css"] # Add any other extensions you want to track
+exclude_dir = ["tmp"]               # Exclude the temporary build directory
+full_reload = true

@@ -58,7 +58,7 @@ func aboutContent() templ.Component {
 			templ_7745c5c3_Var2 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<h1>This is the About Mage!</h1>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<h1>This is the About Mage!</h1><div class=\"flex flex-col\"><input data-bind=\"input\" type=\"text\" class=\"h-10 border border-gray-700 rounded w-[300px]\"><div data-text=\"$input\">I will get replaced with the contents of the input signal</div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
